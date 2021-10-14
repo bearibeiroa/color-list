@@ -5,7 +5,7 @@ class Color extends Component {
   render() {
     const {contentColor} = this.props
     return (
-      <div className="item-color" style={{color: contentColor}}>
+      <div data-testid="color" className="item-color" style={{color: contentColor}}>
         {contentColor}
       </div>
     )
