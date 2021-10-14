@@ -29,18 +29,19 @@ class InputColor extends Component {
     const { color } = this.state;
     return (
       <div className="input-color">
-        <label htmlFor="inputColor">Digite uma cor: </label>
+        <label htmlFor="input-color">Digite uma cor: </label>
         <input
           id="input-color"
           type="text"
           value={color}
           onChange={(e) => this.changeColor(e.target.value)}
         />
-        <input
-          id="btnAdd"
+        <button
           type="button"
-          value="Adicionar"
-          onClick={() => this.addColor(color, addColor)} />
+          onClick={() => this.addColor(color, addColor)}
+        >
+          Adicionar
+        </button>
       </div>
 
     )
